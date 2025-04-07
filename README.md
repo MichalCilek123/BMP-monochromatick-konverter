@@ -1,1 +1,1 @@
-# BMP-monochromatick-konverter
+# Konverzia BMP na monochromatické 
