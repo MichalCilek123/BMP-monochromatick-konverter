@@ -59,7 +59,7 @@ BMP nacitaj_subor_BMP(const string& cesta)
 		ifstream fin(cesta, ios::binary);
 	if(!fin)
 	{
-		cerr << "Cesta k súboru: " << cesta << " neexistuje!" << endl;
+		cerr << "Cesta k sÃºboru: " << cesta << " neexistuje!" << endl;
 		exit(EXIT_FAILURE);
 	}
 	fin.read(reinterpret_cast<char*>(&bmp.hlavicka), sizeof(bmp.hlavicka));
@@ -83,7 +83,7 @@ void vytvor_BMP(const BMP& bmp, const string& ulozenie)
 
 	if(!fout)
 	{
-			cerr << "Súbor sa nepodarilo uloži!" << endl;
+			cerr << "SÃºbor sa nepodarilo uloÅ¾iÂ!" << endl;
 			exit(EXIT_FAILURE);	
 	}
 	
@@ -91,7 +91,7 @@ void vytvor_BMP(const BMP& bmp, const string& ulozenie)
 	fout.write(reinterpret_cast<const char*>(&bmp.info_hlavicka), sizeof(bmp.info_hlavicka));
 	
 	
-	if(bmp.info_hlavicka.bit_sucet == 32 || bmp.info_hlavicka.bit_sucet == 24 || bmp.info_hlavicka.bit_sucet == 16 || bmp.info_hlavicka.bit_sucet == 8)
+	if(bmp.info_hlavicka.bit_sucet == 32 || bmp.info_hlavicka.bit_sucet == 24 )
 	{
 		fout.write(reinterpret_cast<const char*>(&bmp.hlavicka_farieb), sizeof(bmp.hlavicka_farieb));
 	}
@@ -116,7 +116,7 @@ void skonvertuj_BMP_na_monochromaticky_obraz(BMP& bmp)
 			bmp.udaje[index] = seda;
 			bmp.udaje[index + 1] = seda;
 			bmp.udaje[index + 2] = seda;
-			if(bmp.info_hlavicka.bit_sucet == 32 || bmp.info_hlavicka.bit_sucet == 24 || bmp.info_hlavicka.bit_sucet == 16 || bmp.info_hlavicka.bit_sucet == 8)
+			if(bmp.info_hlavicka.bit_sucet == 32 || bmp.info_hlavicka.bit_sucet == 24)
 			{
 				bmp.udaje[index + 3] = 255;
 			}
@@ -129,24 +129,24 @@ int main()
 	SetConsoleCP(1250);
 	SetConsoleOutputCP(1250);
 
-	cout << "Informácie:" << endl;
-	cout << "Program dokáže konvertova bmp súbory, ktoré maju bitovú håbku 24 alebo 32 bitov." << endl;
-	cout << "Postupujte pod¾a nižšie uvedených pokynov." << endl << endl;
+	cout << "InformÃ¡cie:" << endl;
+	cout << "Program dokÃ¡Å¾e konvertovaÂ bmp sÃºbory, ktorÃ© maju bitovÃº hÃ¥bku 24 alebo 32 bitov." << endl;
+	cout << "Postupujte podÂ¾a niÅ¾Å¡ie uvedenÃ½ch pokynov." << endl << endl;
 	
-	cout << "Napíšte sem prosím cestu k BMP súboru, ktorý chcete pretransformova na èiernobielo: ";
+	cout << "NapÃ­Å¡te sem prosÃ­m cestu k BMP sÃºboru, ktorÃ½ chcete pretransformovaÂ na Ã¨iernobielo: ";
 
 	
 	string cesta, ulozenie;
 	cin >> cesta;
 	BMP bmp = nacitaj_subor_BMP(cesta);
 	
-	cout << "Napíšte prosím cestu kam chcete súbor uloži: ";
+	cout << "NapÃ­Å¡te prosÃ­m cestu kam chcete sÃºbor uloÅ¾iÂ: ";
 	cin >> ulozenie;
 	skonvertuj_BMP_na_monochromaticky_obraz(bmp);
 	vytvor_BMP(bmp, ulozenie);
 	
 		
-	cout << "Obrázok sa úspešne prekonvertoval!" << endl;
+	cout << "ObrÃ¡zok sa ÃºspeÅ¡ne prekonvertoval!" << endl;
 
 	system("pause");
 
