@@ -1,0 +1,1 @@
+# BMP-monochromatick-konverter
