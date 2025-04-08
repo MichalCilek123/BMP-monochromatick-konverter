@@ -13,7 +13,7 @@
 ### SetConsoleOutputCP(1250);
 
 ## 1. Základný princíp programu
-Program sparsuje BMP súbor s farebnou hĺbkou 24 alebo 32 bitov a prehodí jeho farby na monochromatické. Na monochromatickú konverziu používa NTSC kódovanie so vzorcom: **0,299 * r + 0,587 * g + 0,114 * b.**, Farby berie z rgb schémy v bitmape. 
+Program sparsuje BMP súbor s farebnou hĺbkou 24 alebo 32 bitov a prehodí jeho farby na monochromatické. Na monochromatickú konverziu používa NTSC kódovanie so vzorcom: **0,299 * r + 0,587 * g + 0,114 * b.** Farby berie z rgb schémy v hlavičke bitmapy. 
 
 ## 2. Celý proces zabezpečujú 3 funckie, ktoré sa volajú: 
 ### nacitaj_subor_BMP
