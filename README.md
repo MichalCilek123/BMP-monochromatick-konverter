@@ -1,4 +1,4 @@
-##SK
+## SK
 # Konverzia BMP na monochromatické 
 
 # Návod na použitie:
