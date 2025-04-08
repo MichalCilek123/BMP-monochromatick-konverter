@@ -21,10 +21,10 @@ Program sparsuje BMP súbor s farebnou hĺbkou 24 alebo 32 bitov a prehodí jeho
 ### vytvor_BMP
 
 ## 3. nacitaj_subor_BMP()
-  Funkcia načita BMP súbor aj s hlavičkou. Zistí či súbor existuje, ak súbor neexistuje, alebo otvorenie zlyhalo, tak sa ukončí program.
+  Funkcia načita BMP súbor aj s hlavičkou. Zistí či súbor existuje, ak súbor neexistuje, alebo otvorenie zlyhalo, tak ukončí program.
 
 ## 4. skonvertuj_BMP_na_monochromaticky_obraz()
-  V tejto funckii sa načíta veľkosť obrázka z BMP súboru pomocou for cyklov a prefarbí ho na monochromatické farby. 
+  V tejto funckii sa načíta veľkosť obrázka z BMP súboru pomocou for cyklov a prefarbí ho na monochromatickú farebnú schému. 
 
 ## 5. vytvor_BMP()
   Funkcia vytvor_BMP vytvorí nový BMP súbor, do ktorého sa budú zapisovať zmenené farby pixelov, ktoré predchádzajúca funkcia prekonvertovala. Prepíše hlavičku zo štruktúry BMP. 
