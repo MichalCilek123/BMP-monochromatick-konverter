@@ -4,7 +4,8 @@
 
 1. Spustite program.
 2. Napíšte presnú cestu k vstupnému BMP súboru, ktorý chcete prekonvertovať na monochormatický obraz.
-3. 
+3. Následne vpíšte cestu k výstupnému súboru BMP, ktorý už bude monochromatický stlačte klávesu ENTER a čakajte.
+4. Ak sa Vám zobrazí veta: "Obrázok sa úspešne prekonvertoval!", tak program môžete zatvoriť a obrázok budete mať čiernobiely.
 
 ## Funkcie BMP konvertora
 ## Program je napísaný v slovenskom jazyku s diakritikou, ktorú zabezpečujú príkazy:
