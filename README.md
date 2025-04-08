@@ -48,3 +48,8 @@ Program sparsuje BMP súbor s farebnou hĺbkou 24 alebo 32 bitov a prehodí jeho
 
 ## 1. Main program functionalities
 Program can parse BMP file with color depth 24 or 32 bis and convert its colours to monochromatic scheme. Program is using a NTSC coding with mathematical formula: 0.299 * r + 0.587 * g + 0.114 * b to monochromatic conversion. All the colours is included in BMP file header. 
+
+## 2. Whole process of BMP parsing and converting includes 3 functions, which is called: 
+### nacitaj_subor_BMP ('load_file_BMP')
+### skonvertuj_BMP_na_monochromaticky_obraz ('convert_BMP_to_monochromatic_image')
+### vytvor_BMP ('create_BMP')
