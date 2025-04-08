@@ -37,4 +37,6 @@ Program sparsuje BMP súbor s farebnou hĺbkou 24 alebo 32 bitov a prehodí jeho
 # Instructions for using this program
 
 1. Launch the program.
-2. Put the path of your BMP file, that you want to convert to monochromatic picture.
+2. Put the path of your BMP file, which you want to convert to monochromatic picture.
+3. Consequently write a path to output BMP file, which will be monochromatic press key ENTER and wait few seconds.
+4. If you see a sentence "Obrázok sa úspešne prekonvertoval!" on screen, your new BMP file is converted to monochromatic and you can close the window of executable file.
