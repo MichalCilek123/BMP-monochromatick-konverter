@@ -1,6 +1,15 @@
 # Konverzia BMP na monochromatické 
 
+# Návod na použitie:
+
+1. Spustite program.
+2. Napíšte presnú cestu k vstupnému BMP súboru, ktorý chcete prekonvertovať na monochormatický obraz.
+3. 
+
 ## Funkcie BMP konvertora
+## Program je napísaný v slovenskom jazyku s diakritikou, ktorú zabezpečujú príkazy:
+### SetConsoleCP(1250);
+### SetConsoleOutputCP(1250);
 
 ## 1. Základný princíp programu
 Program sparsuje BMP súbor s farebnou hĺbkou 24 alebo 32 bitov a prehodí jeho farby na monochromatické. Na monochromatickú konverziu používa NTSC kódovanie so vzorcom: **0,299 * r + 0,587 * g + 0,114 * b.**, Farby berie z rgb schémy v bitmape. 
@@ -17,4 +26,4 @@ Program sparsuje BMP súbor s farebnou hĺbkou 24 alebo 32 bitov a prehodí jeho
   V tejto funckii sa načíta veľkosť obrázka z BMP súboru pomocou for cyklov a prefarbí ho na monochromatické farby. 
 
 ## 5. vytvor_BMP()
-  
+  Funkcia vytvor_BMP vytvorí nový BMP súbor, do ktorého sa budú zapisovať zmenené farby pixelov, ktoré predchádzajúca funkcia prekonvertovala. Prepíše hlavičku zo štruktúry BMP. 
