@@ -53,3 +53,6 @@ Program can parse BMP file with color depth 24 or 32 bis and convert its colours
 ### nacitaj_subor_BMP ('load_file_BMP')
 ### skonvertuj_BMP_na_monochromaticky_obraz ('convert_BMP_to_monochromatic_image')
 ### vytvor_BMP ('create_BMP')
+
+## 3. nacitaj_subor_BMP()
+  Function load BMP file with its header. It detect if file is existing, if file is not existing, or opening of file fail, then program end.
