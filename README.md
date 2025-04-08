@@ -29,3 +29,11 @@ Program sparsuje BMP súbor s farebnou hĺbkou 24 alebo 32 bitov a prehodí jeho
 
 ## 5. vytvor_BMP()
   Funkcia vytvor_BMP vytvorí nový BMP súbor, do ktorého sa budú zapisovať zmenené farby pixelov, ktoré predchádzajúca funkcia prekonvertovala. Prepíše hlavičku zo štruktúry BMP. 
+
+## EN
+
+# Conversion of BMP file to monochromatic 
+
+# Instructions for using this program
+
+
