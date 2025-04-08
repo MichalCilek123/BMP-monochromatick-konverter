@@ -45,3 +45,6 @@ Program sparsuje BMP súbor s farebnou hĺbkou 24 alebo 32 bitov a prehodí jeho
 ## Program has been written in slovak language with diacritics, which is included with these commands:
 ### SetConsoleCP(1250);
 ### SetConsoleOutputCP(1250);
+
+## 1. Main program functionalities
+Program can parse BMP file with color depth 24 or 32 bis and convert its colours to monochromatic scheme. Program is using a NTSC coding with mathematical formula: 0.299 * r + 0.587 * g + 0.114 * b to monochromatic conversion. All the colours is included in BMP file header. 
